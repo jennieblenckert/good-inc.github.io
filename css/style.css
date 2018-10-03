@@ -37,7 +37,9 @@ ol, ul {list-style: none;}
 	box-sizing: border-box;
 }
 
-a, a:hover {text-decoration: none;}
+a, a:hover {
+	text-decoration: none;
+}
 
 @font-face {
     font-family: 'NexaHeavy';

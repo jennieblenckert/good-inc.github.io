@@ -64,10 +64,16 @@ a, a:hover {text-decoration: none;}
 	content: " ";
 	display: table;
 }
-.clearfix:after {clear: both;}
+.clearfix:after {
+	clear: both;
+}
 
-.left {float:left;}
-.right {float:right;}
+.left {
+	float:left;
+}
+.right {
+	float:right;
+}
 
 .container {
 	max-width: 960px;
@@ -104,10 +110,44 @@ a, a:hover {text-decoration: none;}
 	border-left: 12px solid #f66;
 	border-bottom: 12px solid transparent;
 }
+
 .logo > span {
 	display: inline-block;
 	vertical-align: middle;
 	font: 18px 'NexaLight';
 	color: #fff;
 	margin-left: 20px;
+}
+
+#nav {
+	background-color: #444;
+}
+
+.navigation li a {
+	color: #fff;
+	font: 12px Arial, sans-serif;
+	position: relative;
+}
+
+.navigation li {
+	padding: 25px 0;
+	float: left;
+}
+
+.navigation li span {
+	display: block;
+	padding: 0 20px;
+	border-right: 1px solid #777;
+}
+
+.navigation li.active a::after,
+.navigation li a:hover::after {
+	content: '';
+	display: block;
+	position: absolute;
+	height: 4px;
+	background-color: #f66;
+	left: 0;
+	right: 0;
+	top: 35px;
 }
